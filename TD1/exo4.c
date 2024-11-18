@@ -26,7 +26,7 @@ void verifierTailleTableau(const int taille) {
     }
 
     if (taille > TAILLE_MAX) {
-        printf("Nombre trop grand. Fin du programe\n");
+        printf("Nombre trop grand. Fin du programme\n");
         exit(1);
     }
 }
