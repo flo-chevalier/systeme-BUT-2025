@@ -28,7 +28,7 @@ int main(const int argc, char const *argv[]) {
         }
     }
 
-    // à partir d'ici il ne reste que le père
+    // à partir d'ici, il ne reste que le père
     for (int j = 0; j < N; ++j) {
         waitpid(pid[j], NULL, 0);
     }
