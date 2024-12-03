@@ -71,7 +71,7 @@ int main(int argc, char const *argv[]) {
                inet_ntoa(coordonneesAppelant.sin_addr),
                ntohs(coordonneesAppelant.sin_port));
 
-        if ((pid = fork()) == 0) {
+        if (fork() == 0) {
             close(fdSocketAttente);
 
             getDateTime(tampon);
