@@ -59,6 +59,8 @@ int main(const int argc, char const *argv[]) {
         exit(EXIT_FAILURE);
     }
 
+    printf("En attente de connexion...\n");
+
     socklen_t tailleCoord = sizeof(coordonneesAppelant);
 
     if ((fdSocketCommunication = accept(fdSocketAttente, (struct sockaddr *) &coordonneesAppelant, &tailleCoord)) == -1) {
