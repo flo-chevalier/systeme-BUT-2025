@@ -47,6 +47,9 @@ Toutes les secondes chaque thread affiche son numéro, une position aléatoire d
 
 # RAPPELS
 
+#### Pour compiler
+gcc exo.c -lpthread -o mon_executable
+
 #### Lancer un thread
 
 ```c
