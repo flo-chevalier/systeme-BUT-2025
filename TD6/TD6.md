@@ -50,6 +50,10 @@ Toutes les secondes chaque thread affiche son numéro, une position aléatoire d
 #### Lancer un thread
 
 ```c
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct {
     int variable;
 } Donnees;
@@ -66,6 +70,7 @@ int main(int argc, char* argv[]) {
     donnees.variable = 10;
     pthread_create(&monThread, NULL, maFonction, (void*) &donnees);
     pthread_join(monThread, NULL);
+    return 0;
 }
 ```
 
