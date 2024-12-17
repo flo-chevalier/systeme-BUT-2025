@@ -64,7 +64,7 @@ int main(int argc, char* argv[]) {
     pthread_t monThread;
     Donnees donnees;
     donnees.variable = 10;
-    pthread_create(&monThread, NULL, maFonction, (void\*) \&donnees);
+    pthread_create(&monThread, NULL, maFonction, (void*) &donnees);
     pthread_join(monThread, NULL);
 }
 ```
